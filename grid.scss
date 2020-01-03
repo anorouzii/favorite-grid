@@ -19,9 +19,10 @@ $smallest-column-width : $largest-column-width / $max-column;
       .#{col}-#{$i} {
         width: $smallest-column-width * $i;
       }
-    }
-    .#{col}-#{$size}-#{$i} {
-      width: $smallest-column-width * $i;
+    }@else {
+      .#{col}-#{$size}-#{$i} {
+        width: $smallest-column-width * $i;
+      }
     }
   }
 }
