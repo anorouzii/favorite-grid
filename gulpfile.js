@@ -14,5 +14,5 @@ gulp.task('sass', function () {
 gulp.task('minify-css', () => {
     return gulp.src('dist/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist/grid.min.css'));
+        .pipe(gulp.dest('dist/'));
 });
