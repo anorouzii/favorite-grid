@@ -3,30 +3,38 @@
 
 A customizable grid system
 
-The idea behind this grid is infinite customization.
-You can easily create your own grid system with Favorite Grid. By default this system is similar to Bootstrap. You can have an infinite number of `breakpoint` and `columns`. The system is also only `3 kB` by default which is very light.
+The idea behind this grid is to be so customizable.
+You can easily create your grid system with Favorite Grid. By default, this system is like Bootstrap plus you have an infinite number of `breakpoint` and `columns` and it's only `3 kB` which is very light.
 
 ## Usage
 
-define how many columns you want to have in : `$max-column`
+define how many columns you want in `$max-column` variable
 
-The columns are created with this mixin, which accepts a parameter $size like ( sm - md - lg ) 
-('none' for No device size)
+Columns will be generated with grid() mixin, which accepts a $size parameter like (sm, md, lg, ... and 'none' for No device size ) 
+
 ```
 @mixin grid ($size) { }
 ```
 
-Here you define the columns in different breakpoints.
+breakpoint() creates grids in specified sizes.
 ```
 @mixin breakpoint($type, $breakpoint) { }
 ```
 
-Like this for small device :
+Like this one for small device :
 ```
 @include breakpoint(min,sm) {
   @include grid(sm)
 }
 ``` 
+
+## Versions
+There are two versions of this grid system: 
+
+Flex version : Supported by new browsers ( [See more details](https://caniuse.com/#feat=flexbox) )
+
+Float base version : Supported by most browsers
+
 ## License
 ```
 Licensed under MIT 
