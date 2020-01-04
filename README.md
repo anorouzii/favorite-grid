@@ -1,5 +1,5 @@
 # Favorite Grid
-![Favorite Grid Logo](https://i.ibb.co/z87375h/favorite-grid-logo.png" alt="favorite-grid-logo)
+![Favorite Grid Logo](https://i.ibb.co/z87375h/favorite-grid-logo.png)
 
 A customizable grid system
 
