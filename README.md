@@ -10,7 +10,7 @@ You can easily create your own grid system with Favorite Grid. By default this s
 
 you define how many columns you want to have in : `$max-column`
 
-The columns are created with this mixin, which accepts a parameter $size like ( sm - md - lg )
+The columns are created with this mixin, which accepts a parameter $size like ( sm - md - lg ) 
 ('none' for No device size)
 ```
 @mixin grid ($size) { }
@@ -26,9 +26,8 @@ Like this for small device :
 @include breakpoint(min,sm) {
   @include grid(sm)
 }
-```
+``` 
 ## License
 ```
-Licensed under MIT
+Licensed under MIT 
 ```
-
