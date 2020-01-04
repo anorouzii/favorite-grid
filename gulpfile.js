@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 let cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Compile Sass file to css
 sass.compiler = require('node-sass');
@@ -16,3 +17,12 @@ gulp.task('minify-css', () => {
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/'));
 });
+
+// Autoprefix for css file
+exports.default = () => (
+    gulp.src('dist/*.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
