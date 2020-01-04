@@ -1,9 +1,10 @@
 # Favorite Grid
-![Favorite Grid Logo](https://i.ibb.co/z87375h/favorite-grid-logo.png)
+![Favorite Grid Logo](https://i.ibb.co/Jvvw6qG/favorite-grid-logo.png)
 
 A customizable grid system
 
-This grid is inspired by the Bootstrap grid system and the idea behind this system was to be fully customizable.
+The idea behind this grid is infinite customization.
+You can easily create your own grid system with Favorite Grid. By default this system is similar to Bootstrap and if you have worked with Bootstrap you can work with it too. You can have an infinite number of `breakpoint` and `columns`. The system is also only `2 kB` by default which is very light.
 
 #### License
 `Licensed under MIT`
