@@ -35,6 +35,11 @@ Flex version : Supported by new browsers ( [See more details](https://caniuse.co
 
 Float base version : Supported by most browsers
 
+## Demo
+```
+https://favorite-grid.firebaseapp.com/
+```
+
 ## License
 ```
 Licensed under MIT 
