@@ -15,14 +15,14 @@ gulp.task('sass', function () {
 gulp.task('minify-css', () => {
     return gulp.src('dist/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/min'));
 });
 
 // Autoprefix for css file
-exports.default = () => (
+exports.autoprefix = () => (
     gulp.src('dist/*.css')
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/min'))
 );
